@@ -4,6 +4,9 @@ let newBotscore = 0;
 let newPlayerscore = 0;
       const btnRoll = document.querySelectorAll("input");
       let player1;
+      document.getElementById("botScore").innerHTML = "0";
+      document.getElementById("playerScore").innerHTML = "0";
+
       console.log(Rps);
       btnRoll.forEach((btnRoll) =>
         btnRoll.addEventListener("click", (a) => {
