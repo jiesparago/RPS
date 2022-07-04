@@ -22,10 +22,14 @@ let newPlayerscore = 0;
             list.appendChild(li);
           } else if (computer1 === "PAPER") {
             li.textContent = "Rock Vs. Paper. Computer Wins";
+            newBotscore = newBotscore + 1;
+            document.getElementById("botScore").innerHTML = newBotscore;
             li.style.color = "red";
             list.appendChild(li);
           } else if (computer1 === "SCISSORS") {
             li.textContent = "Rock  Vs. Scissors. Player 1 Wins";
+            newPlayerscore = newPlayerscore + 1;
+          document.getElementById("playerScore").innerHTML = newPlayerscore;
             li.style.color = "green";
             list.appendChild(li);
           }
@@ -35,10 +39,14 @@ let newPlayerscore = 0;
             list.appendChild(li);
           } else if (computer1 == "SCISSORS") {
             li.textContent = "Paper  Vs. Scissors. Computer Wins";
+            newBotscore = newBotscore + 1;
+            document.getElementById("botScore").innerHTML = newBotscore;
             li.style.color = "red";
             list.appendChild(li);
           } else if (computer1 == "ROCK") {
             li.textContent = "Paper  Vs. Rock. Player 1 Wins";
+            newPlayerscore = newPlayerscore + 1;
+            document.getElementById("playerScore").innerHTML = newPlayerscore;
             li.style.color = "green";
             list.appendChild(li);
           }
@@ -50,11 +58,15 @@ let newPlayerscore = 0;
           } else if (computer1 == "PAPER") {
            
             li.textContent = "Scissors  Vs. Paper. Player 1 Wins";
+            newPlayerscore = newPlayerscore + 1;
+            document.getElementById("playerScore").innerHTML = newPlayerscore;
             li.style.color = "green";
             list.appendChild(li);
           } else if (computer1 == "ROCK"){
           
             li.textContent = "Scissors  Vs. Rock. Computer Wins";
+            newBotscore = newBotscore + 1;
+            document.getElementById("botScore").innerHTML = newBotscore;
             li.style.color = "red";
             list.appendChild(li);
         }
